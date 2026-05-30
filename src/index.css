@@ -1,0 +1,31 @@
+/* If you are using Tailwind CSS, these 3 lines bring in all the styling */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Base reset to make sure the app looks clean on all browsers */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+    background-color: #f8fafc;
+    /* A nice light-slate background color */
+    color: #0f172a;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    min-height: 100vh;
+    padding: 2rem;
+}
+
+
+/* Fallback styles just in case Tailwind isn't fully installed yet */
+
+input {
+    font-family: inherit;
+}
